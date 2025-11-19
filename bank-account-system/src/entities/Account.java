@@ -40,4 +40,13 @@ public class Account {
     public void withdraw(double amount){
         balance -= amount + 5.0;
     }
+
+    public String toString() {
+        return "ACCOUNT: "
+                + number
+                + "\nHOLDER: "
+                + holder
+                + "\nBALANCE: $ "
+                + String.format("%.2f", balance);
+    }
 }
